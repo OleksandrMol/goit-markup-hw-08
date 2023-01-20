@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+nav>ul {
+    letter-spacing: 0.02em;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.714;
+    color: var(--text-color);
+    letter-spacing: 0.03em;
+    background-color: var(--accent-color);
+    &.modal-open{
+        overflow: hidden;
+    }
+    
+}
+.section {
+    padding: 94px 0;
+}
