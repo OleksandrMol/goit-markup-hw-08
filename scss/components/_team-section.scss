@@ -14,7 +14,8 @@
             flex-wrap: wrap;
         }
         @media (min-width:1151px) {
-            margin: -15px;
+          /*   margin: -15px; */
+            flex-wrap: nowrap;
         }
         @media (min-width:1200px) {
             flex-wrap: nowrap;
@@ -29,9 +30,9 @@
         @media (min-width:768px) {
              max-width: 354px;
             flex-basis: calc((100% - 30px) / 2);}
-        @media (min-width:1151px) {
+        /* @media (min-width:1151px) {
             margin: 15px;            
-        }
+        } */
         @media (min-width:1200px) {
             margin: 0;
          }
