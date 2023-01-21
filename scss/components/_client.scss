@@ -40,6 +40,9 @@
             fill: var(--active-color);
             border: 1px solid var(--active-color);
             }
+         @media (max-width:1199px) {
+             height: 100%;
+         }
     }
     
 }
