@@ -666,6 +666,10 @@ address {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+@media (min-width: 1151px) {
+  .team__list {
     margin: -15px;
   }
 }
@@ -684,10 +688,14 @@ address {
 }
 @media (min-width: 768px) {
   .team__item {
-    margin: 15px;
     max-width: 354px;
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media (min-width: 1151px) {
+  .team__item {
+    margin: 15px;
   }
 }
 @media (min-width: 1200px) {
