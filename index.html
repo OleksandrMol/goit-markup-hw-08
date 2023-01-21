@@ -66,7 +66,11 @@
             </li>
             <li>
               <a class="header__contact-links" href="tel:+380961111111">
-                <svg class="header__contact-links-icon" width="10" height="16">
+                <svg
+                  class="header__contact-links-icon header__contact-links-icon-tel"
+                  width="10"
+                  height="16"
+                >
                   <use href="./images/icons.svg#icon-smartphone "></use>
                 </svg>
                 +38 096 111 11 11
@@ -532,7 +536,11 @@
         </button>
         <ul class="mob-mane__nav">
           <li>
-            <a class="mob-mane__links" href="./index.html">Студія</a>
+            <a
+              class="mob-mane__links mob-mane__links--current"
+              href="./index.html"
+              >Студія</a
+            >
           </li>
           <li>
             <a class="mob-mane__links" href="./portfolio.html">Портфоліо</a>
@@ -660,9 +668,8 @@
                 <a href="#" class="form-fiel__checkbox-link">Умови договору</a>
               </label>
             </div>
+            <button type="submit" class="button-check">Відправити</button>
           </div>
-
-          <button type="submit" class="button-check">Відправити</button>
         </form>
       </div>
     </div>

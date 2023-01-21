@@ -49,6 +49,11 @@ body.modal-open {
 .section {
   padding: 94px 0;
 }
+@media (max-width: 1199px) {
+  .section {
+    padding: 60px 0;
+  }
+}
 
 /* Ресет */
 /* Стили для обнуления верхних отступов у элементов */
@@ -108,10 +113,14 @@ address {
         flex-wrap: nowrap;
   }
 }
+.benefits__item {
+  margin-bottom: 30px;
+}
 @media (min-width: 768px) {
   .benefits__item {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -397,13 +406,26 @@ address {
 .hero__section {
   max-width: 1600px;
   margin: auto;
-  padding: 200px 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-team.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-team.jpg);
+  padding: 118px 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-team-w420.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-team-w420.jpg);
   background-color: var(--background-hero);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (min-width: 768px) {
+  .hero__section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-team-w768.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-team-w768.jpg);
+  }
+}
+@media (min-width: 1200px) {
+  .hero__section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-team.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-team.jpg);
+    padding: 200px 0;
+  }
 }
 .hero__title {
   margin-bottom: 30px;
@@ -460,7 +482,7 @@ address {
   }
 }
 .inform__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--title-color);
   font-size: 28px;
   line-height: 1.1719;
@@ -470,6 +492,7 @@ address {
 @media (min-width: 1200px) {
   .inform__title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 .inform__list {
@@ -715,7 +738,7 @@ address {
 }
 @media (min-width: 768px) {
   .contener {
-    max-width: 1999px;
+    max-width: 1199px;
   }
 }
 @media (min-width: 1200px) {
@@ -876,7 +899,7 @@ address {
 .form-fiel__sub-email {
   margin-right: 12px;
   padding: 0 12px 0 16px;
-  width: 358px;
+  max-width: 358px;
   height: 50px;
   color: var(--accent-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -884,10 +907,10 @@ address {
   background-color: transparent;
   outline: none;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .form-fiel__sub-email {
     margin: 0 0 20px;
-    width: 450px;
+    max-width: 450px;
   }
 }
 .form-fiel__sub-email::-webkit-input-placeholder {
@@ -929,7 +952,7 @@ address {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 28px;
-  width: 205px;
+  width: 200px;
   fill: var(--accent-color);
   background-color: var(--active-color);
   color: var(--accent-color);
@@ -1082,6 +1105,18 @@ address {
   fill: currentColor;
   margin-right: 10px;
 }
+@media (max-width: 1199px) {
+  .header__contact-links-icon {
+    width: 14px;
+    height: 10px;
+  }
+}
+@media (max-width: 1199px) {
+  .header__contact-links-icon-tel {
+    width: 10px;
+    height: 14px;
+  }
+}
 .header__burger {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1089,8 +1124,6 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40px;
-  height: 40px;
   fill: var(--title-color);
   border: none;
   background-color: inherit;
@@ -1173,6 +1206,9 @@ address {
 .mob-mane__links:hover, .mob-mane__links:focus {
   color: var(--active-color);
 }
+.mob-mane__links--current {
+  color: var(--active-color);
+}
 .mob-mane__contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1200,6 +1236,8 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 20px;
 }
 .mob-mane__sosial-link {
@@ -1258,7 +1296,7 @@ address {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .modal {
     max-height: 609px;
     max-width: 450px;
@@ -1271,7 +1309,7 @@ address {
   text-align: center;
   color: var(--title-color);
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .modal__title {
     line-height: 1.5;
   }

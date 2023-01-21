@@ -2,15 +2,29 @@
     &__section {
             max-width: 1600px;
             margin: auto;
-            padding: 200px 0;
+            padding: 118px 0;
             background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(../images/background-team.jpg);
+                url(../images/background-team-w420.jpg);
             background-color: var(--background-hero);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            @media (min-width:768px) {
+                background-image: linear-gradient(to right,
+                            rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)),
+                        url(../images/background-team-w768.jpg);                
+            }
+
+            @media (min-width:1200px) {
+            background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../images/background-team.jpg);
+            padding: 200px 0;
+            }
         }
     &__title {
         margin-bottom: 30px;

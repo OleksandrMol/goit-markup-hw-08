@@ -25,6 +25,9 @@
         &:focus {
            color: var(--active-color);
          }
+         &--current{
+            color: var(--active-color);
+         }
     }
     &__contact{
         display: flex;
@@ -46,6 +49,7 @@
     }
     &__sosial{
         display: flex; 
+        flex-wrap: wrap;
         gap: 20px;
     }
     &__sosial-link{
