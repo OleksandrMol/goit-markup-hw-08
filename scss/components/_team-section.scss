@@ -14,8 +14,7 @@
             flex-wrap: wrap;
         }
         @media (min-width:1151px) {
-          /*   margin: -15px; */
-            flex-wrap: nowrap;
+          flex-wrap: nowrap;
         }
         @media (min-width:1200px) {
             flex-wrap: nowrap;
@@ -28,14 +27,12 @@
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
         @media (min-width:768px) {
-             max-width: 354px;
-            flex-basis: calc((100% - 30px) / 2);}
-        /* @media (min-width:1151px) {
-            margin: 15px;            
-        } */
+            max-width: 354px;
+            flex-basis: calc((100% - 30px) / 2);
+        }        
         @media (min-width:1200px) {
             margin: 0;
-         }
+        }
     }
     &__item-img{
         width: auto;

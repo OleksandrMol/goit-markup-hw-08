@@ -30,7 +30,6 @@
             <a href="./index.html" class="logo logo__web"
               ><span>Web</span><span class="logo__end">Studio</span>
             </a>
-
             <ul class="header__menu">
               <li>
                 <a class="header__links" href="./index.html">Студія</a>
@@ -45,7 +44,16 @@
               <li><a class="header__links" href="#">Контакти</a></li>
             </ul>
           </nav>
-
+          <button
+            class="header__burger js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            type="button"
+          >
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
           <ul class="header__contact">
             <li>
               <a class="header__contact-links" href="mailto:info@devstudio.com">
@@ -57,7 +65,11 @@
             </li>
             <li>
               <a class="header__contact-links" href="tel:+380961111111">
-                <svg class="header__contact-links-icon" width="10" height="16">
+                <svg
+                  class="header__contact-links-icon header__contact-links-icon-tel"
+                  width="10"
+                  height="16"
+                >
                   <use href="./images/icons.svg#icon-smartphone "></use>
                 </svg>
                 +38 096 111 11 11
@@ -92,13 +104,40 @@
                       особу.
                     </p>
                   </div>
-                  <img
-                    srcset="./images/desktop.jpg 1x, ./images/desktop@2x.jpg 2x"
-                    src="./images/desktop.jpg"
-                    alt="Ноутбут з відкритою веб-сторінкою"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop.jpg    1x,
+                        ./images/desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop-tablet.jpg    1x,
+                        ./images/desktop-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop-phone.jpg    1x,
+                        ./images/desktop-phone@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/desktop.jpg    1x,
+                        ./images/desktop@2x.jpg 2x
+                      "
+                      src="./images/desktop.jpg"
+                      alt="Ноутбут з відкритою веб-сторінкою"
+                      width="370"
+                      height="294"
+                      class="porduct-title__img"
+                    />
+                  </picture>
                 </div>
                 <div class="porduct-title__contener">
                   <h3 class="porduct-title__project">Технокряк</h3>
@@ -117,16 +156,40 @@
                       особу.
                     </p>
                   </div>
-                  <img
-                    srcset="
-                      ./images/backetball.jpg    1x,
-                      ./images/backetball@2x.jpg 2x
-                    "
-                    src="./images/backetball.jpg"
-                    alt="Двоє баскетбольних гравців з м'ячем"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/backetball.jpg    1x,
+                        ./images/backetball@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/backetball-tablet.jpg    1x,
+                        ./images/backetball-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/backetball-phone.jpg    1x,
+                        ./images/backetball-phone@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/backetball.jpg    1x,
+                        ./images/backetball@2x.jpg 2x
+                      "
+                      src="./images/backetball.jpg"
+                      alt="Двоє баскетбольних гравців з м'ячем"
+                      width="370"
+                      height="294"
+                      class="porduct-title__img"
+                    />
+                  </picture>
                 </div>
                 <div class="porduct-title__contener">
                   <h3 class="porduct-title__project">
@@ -147,16 +210,40 @@
                       особу.
                     </p>
                   </div>
-                  <img
-                    srcset="
-                      ./images/restoran.jpg    1x,
-                      ./images/restoran@2x.jpg 2x
-                    "
-                    src="./images/restoran.jpg"
-                    alt="Назва морського ресторану на фоні риби"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/restoran.jpg    1x,
+                        ./images/restoran@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/restoran-tablet.jpg    1x,
+                        ./images/restoran-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/restoran-phone.jpg    1x,
+                        ./images/restoran-phone@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/restoran.jpg    1x,
+                        ./images/restoran@2x.jpg 2x
+                      "
+                      src="./images/restoran.jpg"
+                      alt="Назва морського ресторану на фоні риби"
+                      width="370"
+                      height="294"
+                      class="porduct-title__img"
+                    />
+                  </picture>
                 </div>
                 <div class="porduct-title__contener">
                   <h3 class="porduct-title__project">Ресторан Seafood</h3>
@@ -175,16 +262,40 @@
                       особу.
                     </p>
                   </div>
-                  <img
-                    srcset="
-                      ./images/headphone.jpg    1x,
-                      ./images/headphone@2x.jpg 2x
-                    "
-                    src="./images/headphone.jpg"
-                    alt="Чорні, великі навушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/headphone.jpg    1x,
+                        ./images/headphone@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/headphone-tablet.jpg    1x,
+                        ./images/headphone-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/headphone-phone.jpg    1x,
+                        ./images/headphone-phone@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/headphone.jpg    1x,
+                        ./images/headphone@2x.jpg 2x
+                      "
+                      src="./images/headphone.jpg"
+                      alt="Чорні, великі навушники"
+                      width="370"
+                      height="294"
+                      class="porduct-title__img"
+                    />
+                  </picture>
                 </div>
                 <div class="porduct-title__contener">
                   <h3 class="porduct-title__project">Проєкт Prime</h3>
@@ -203,13 +314,34 @@
                       особу.
                     </p>
                   </div>
-                  <img
-                    srcset="./images/boxes.jpg 1x, ./images/boxes@2x.jpg 2x"
-                    src="./images/boxes.jpg"
-                    alt="Дві кробки різного кольору й розміру"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/boxes.jpg 1x, ./images/boxes@2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/boxes-tablet.jpg    1x,
+                        ./images/boxes-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/boxes-phone.jpg    1x,
+                        ./images/boxes-phone@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      srcset="./images/boxes.jpg 1x, ./images/boxes@2x.jpg 2x"
+                      src="./images/boxes.jpg"
+                      alt="Дві кробки різного кольору й розміру"
+                      width="370"
+                      height="294"
+                      class="porduct-title__img"
+                    />
+                  </picture>
                 </div>
                 <div class="porduct-title__contener">
                   <h3 class="porduct-title__project">Проєкт Boxes</h3>
@@ -228,13 +360,34 @@
                       особу.
                     </p>
                   </div>
-                  <img
-                    srcset="./images/pc.jpg 1x, ./images/pc@2x.jpg 2x"
-                    src="./images/pc.jpg"
-                    alt="Увімкнений монітор з сайтом"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/pc.jpg 1x, ./images/pc@2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/pc-tablet.jpg    1x,
+                        ./images/pc-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/pc-phone.jpg    1x,
+                        ./images/pc-phone@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      srcset="./images/pc.jpg 1x, ./images/pc@2x.jpg 2x"
+                      src="./images/pc.jpg"
+                      alt="Увімкнений монітор з сайтом"
+                      width="370"
+                      height="294"
+                      class="porduct-title__img"
+                    />
+                  </picture>
                 </div>
                 <div class="porduct-title__contener">
                   <h3 class="porduct-title__project">
@@ -255,13 +408,34 @@
                       особу.
                     </p>
                   </div>
-                  <img
-                    srcset="./images/book.jpg 1x, ./images/book@2x.jpg 2x"
-                    src="./images/book.jpg"
-                    alt="Вікритий журнал із статтею"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/book.jpg 1x, ./images/book@2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/book-tablet.jpg    1x,
+                        ./images/book-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/book-phone.jpg    1x,
+                        ./images/book-phone@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      srcset="./images/book.jpg 1x, ./images/book@2x.jpg 2x"
+                      src="./images/book.jpg"
+                      alt="Вікритий журнал із статтею"
+                      width="370"
+                      height="294"
+                      class="porduct-title__img"
+                    />
+                  </picture>
                 </div>
                 <div class="porduct-title__contener">
                   <h3 class="porduct-title__project">
@@ -282,13 +456,34 @@
                       особу.
                     </p>
                   </div>
-                  <img
-                    srcset="./images/lable.jpg 1x, ./images/lable@2x.jpg 2x"
-                    src="./images/lable.jpg"
-                    alt="Бірка з назвою проекту"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/lable.jpg 1x, ./images/lable@2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/lable-tablet.jpg    1x,
+                        ./images/lable-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/lable-phone.jpg    1x,
+                        ./images/lable-phone@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      srcset="./images/lable.jpg 1x, ./images/lable@2x.jpg 2x"
+                      src="./images/lable.jpg"
+                      alt="Бірка з назвою проекту"
+                      width="370"
+                      height="294"
+                      class="porduct-title__img"
+                    />
+                  </picture>
                 </div>
                 <div class="porduct-title__contener">
                   <h3 class="porduct-title__project">Проєкт LAB</h3>
@@ -307,16 +502,40 @@
                       особу.
                     </p>
                   </div>
-                  <img
-                    srcset="
-                      ./images/notebook.jpg    1x,
-                      ./images/notebook@2x.jpg 2x
-                    "
-                    src="./images/notebook.jpg"
-                    alt="Робота за ноутбуком над бізнесом"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/notebook.jpg    1x,
+                        ./images/notebook@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/notebook-tablet.jpg    1x,
+                        ./images/notebook-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/notebook-phone.jpg    1x,
+                        ./images/notebook-phone@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/notebook.jpg    1x,
+                        ./images/notebook@2x.jpg 2x
+                      "
+                      src="./images/notebook.jpg"
+                      alt="Робота за ноутбуком над бізнесом"
+                      width="370"
+                      height="294"
+                      class="porduct-title__img"
+                    />
+                  </picture>
                 </div>
                 <div class="porduct-title__contener">
                   <h3 class="porduct-title__project">Growing Business</h3>
@@ -331,7 +550,7 @@
 
     <footer class="context-section">
       <div class="contener footer-contener">
-        <div class="footer-sosial">
+        <div class="footer-address">
           <a href="./index.html" class="logo logo__web logo__footer"
             ><span>Web</span
             ><span class="context-section__logo-end logo__end">Studio</span>
@@ -416,5 +635,65 @@
         </div>
       </div>
     </footer>
+
+    <div class="mob-mane js-menu-container" id="mobile-menu">
+      <div class="mob-mane__contener">
+        <button type="button" class="modal__close js-close-menu">
+          <svg width="11" height="11">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <ul class="mob-mane__nav">
+          <li>
+            <a class="mob-mane__links" href="./index.html">Студія</a>
+          </li>
+          <li>
+            <a
+              class="mob-mane__links mob-mane__links--current"
+              href="./portfolio.html"
+              >Портфоліо</a
+            >
+          </li>
+          <li><a class="mob-mane__links" href="#">Контакти</a></li>
+        </ul>
+        <ul class="mob-mane__contact">
+          <li>
+            <a
+              class="mob-mane__contact-links mob-mane__tel"
+              href="tel:+380961111111"
+            >
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li>
+            <a class="mob-mane__contact-links" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="mob-mane__sosial">
+          <li class="mob-mane__item">
+            <a href="#" class="mob-mane__sosial-link">Instagram</a>
+          </li>
+          <li class="mob-mane__item">
+            <a href="#" class="mob-mane__sosial-link">Twitter</a>
+          </li>
+          <li class="mob-mane__item">
+            <a href="#" class="mob-mane__sosial-link">Facebook</a>
+          </li>
+          <li class="mob-mane__item">
+            <a href="#" class="mob-mane__sosial-link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
